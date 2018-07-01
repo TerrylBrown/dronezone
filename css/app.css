@@ -682,6 +682,11 @@ h2 {
   color: #a7acbc;
   font-size: 0.7777777778em; }
 
+.primary-footer a {
+  color: #a7acbc;
+  text-decoration: none;
+  font-weight: bold; }
+
 .button {
   display: inline-block;
   height: 3.125rem;
