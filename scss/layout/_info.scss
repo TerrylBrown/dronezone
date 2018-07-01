@@ -1,0 +1,21 @@
+.info {
+	padding: rem-calc(120px) 0;
+
+	@include breakpoint(lg) {
+		background: url('./../imgs/info-drone.jpg') no-repeat 135% center;	
+	}
+
+	@include breakpoint(xlg) {
+		background: url('./../imgs/info-drone.jpg') no-repeat right center;
+	}
+}
+
+.info__intro {
+	width: 100%;
+	max-width: rem-calc(800px);
+}
+
+.info__points {
+	width: 100%;
+	max-width: rem-calc(1000px);
+}

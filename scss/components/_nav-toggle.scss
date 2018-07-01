@@ -1,0 +1,56 @@
+.nav-toggle {
+	position: relative;
+	display: block;
+	width: rem-calc(40px);
+	height: rem-calc(40px);
+	cursor: pointer;
+	z-index: 10;
+
+	@include breakpoint(md) {
+		display: none;
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: rem-calc(10px);
+		left: 0;
+		width: 100%;
+		height: rem-calc(2px);
+		background: #fff;
+	}
+
+	&:after {
+		top: auto;
+		bottom: rem-calc(8px);
+	}
+
+	&.active {
+		span {
+			display: none;
+		}
+
+		&:before,
+		&:after {
+			top: 50%;
+			transition: all .3s;
+		}
+		
+		&:before {
+			transform: rotate(45deg);
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.nav-toggle span {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: rem-calc(2px);
+	background: #fff;
+}

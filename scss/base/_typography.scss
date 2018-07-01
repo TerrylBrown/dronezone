@@ -1,0 +1,39 @@
+@import url($font-family-url);
+
+body {
+	font-family: $base-font-family;
+	font-size: 1em;
+	line-height: $base-line-height;
+	color: #5e6372;
+
+	@include breakpoint(md) {
+		font-size: em-calc(18px, 16px);
+	}
+}
+
+p {
+	margin: 0 0 rem-calc(15px);
+}
+
+h1 {
+	font-size: em-calc(36px, 16px);
+	line-height: 1.2;
+	margin: 0 0 rem-calc(15px);
+
+	@include breakpoint(md) {
+		font-size: em-calc(48px, 18px);
+	}
+}
+
+h2 {
+	font-size: em-calc(30px, 18px);
+	margin: 0 0 rem-calc(15px);
+}
+
+
+.text-gradient {
+	display: inline-block;
+  background: linear-gradient(45deg, #cb0134 0%,#e06900 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

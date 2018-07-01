@@ -1,0 +1,29 @@
+@mixin grid-wrapper {
+	width: 100%;
+	max-width: rem-calc(1400px);
+	margin: 0 auto;
+	padding-left: rem-calc(15px);
+	padding-right: rem-calc(15px);
+}
+
+@mixin grid-row() {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: rem-calc(-15px);
+	margin-right: rem-calc(-15px);
+}
+
+.grid__wrapper {
+	@include grid-wrapper;
+	border: 1px solid transparent;
+}
+
+.grid__row {
+	@include grid-row;
+}
+
+.grid__col {	
+	padding: 0 rem-calc(15px);	
+}
+

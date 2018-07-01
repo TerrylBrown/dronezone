@@ -1,0 +1,51 @@
+.button {
+	display: inline-block;
+	height: rem-calc(50px);
+	line-height: rem-calc(50px);
+	margin: 0 0 rem-calc(15px);
+	padding: 0 rem-calc(50px);
+	background: #999;
+	border-radius: rem-calc(50px);
+	text-decoration: none;
+	border: 1px solid transparent;
+	outline: none;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+// Button Sizes
+.button--small {
+	height: rem-calc(45px);
+	line-height: rem-calc(45px);
+	padding: 0 rem-calc(20px);
+	border-radius: rem-calc(45px);
+}
+
+// Button Themes
+.button--light {
+	background: #fff;
+	color: #d32721;
+}
+
+.button--dark {
+	background: linear-gradient(45deg, #264699 0%,#4964a9 100%);
+	color: #fff;
+}
+
+.button--ghost {
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	color: #fff;
+}
+
+.button img {
+	width: rem-calc(15px);
+	height: rem-calc(15px);
+	margin-right: rem-calc(5px);
+}
+
+// Button Group
+.button-group .button {
+	margin-left: rem-calc(10px);
+	margin-right: rem-calc(10px);
+}

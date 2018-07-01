@@ -1,0 +1,16 @@
+.newsletter {
+	background: url('./../imgs/newsletter-bg.jpg') no-repeat center center;
+	background-size: cover;
+	padding: rem-calc(120px) 0;
+	text-align: center;
+	color: #fff;
+
+	@include breakpoint(md) {
+		padding: rem-calc(150px) 0 rem-calc(180px);
+	}
+}
+
+.newsletter__input {
+	max-width: rem-calc(390px);
+	margin: rem-calc(45px) auto 0;
+}

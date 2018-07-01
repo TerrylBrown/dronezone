@@ -1,0 +1,12 @@
+.map {
+	overflow: hidden;
+}
+
+.map img {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	width: 100%;
+	min-width: rem-calc(1200px);
+}

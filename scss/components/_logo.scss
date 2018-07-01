@@ -1,0 +1,21 @@
+.logo {
+	position: relative;
+	display: inline-block;
+	font-size: em-calc(32px, 16px);
+	color: #212121;
+	text-decoration: none;
+	font-weight: 700;
+	z-index: 10;
+
+	@include breakpoint(md) {
+		font-size: em-calc(36px, 18px);
+	}
+}
+
+.logo span {
+	font-weight: 400;
+}
+
+.logo--light {
+	color: #fff;;
+}

@@ -1,0 +1,19 @@
+/*
+**	app styles
+*/
+
+// Import and invoke Normalize reset
+@import './../node_modules/normalize-scss/sass/normalize';
+@include normalize();
+
+// Utilities
+@import 'utils/utils';
+
+// Base
+@import 'base/base';
+
+// Layout
+@import 'layout/layout';
+
+// Components
+@import 'components/components';

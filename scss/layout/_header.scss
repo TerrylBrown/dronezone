@@ -1,0 +1,21 @@
+.primary-header {
+	@include grid-wrapper;
+	position: absolute;	
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-top: rem-calc(30px);
+}
+
+.primary-header__row {
+	display: flex;
+	align-items: center;
+
+	@include breakpoint(md) {
+		align-items: flex-end;
+	}
+}
+
+.primary-header__logo {
+	margin-right: auto;
+}

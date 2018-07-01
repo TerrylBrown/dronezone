@@ -1,0 +1,28 @@
+input[type="text"] {
+	display: block;
+	width: 100%;
+	padding: 0 rem-calc(30px);
+	height: rem-calc(50px);
+	line-height: rem-calc(50px);
+	border-radius: rem-calc(50px);
+	outline: none;
+	background: rgba(255, 255, 255, 0.2);
+	border: rem-calc(1px) solid rgba(255, 255, 255, 0.3);
+	color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.input-inline {
+	position: relative;
+
+	.button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0;
+	}
+}

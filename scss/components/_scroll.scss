@@ -1,0 +1,30 @@
+.scroll {
+	text-align: center;
+}
+
+.scroll__icon {
+	position: relative;
+	margin: 0 auto rem-calc(5px);
+	width: rem-calc(26px);
+	height: rem-calc(40px);
+	border-radius: rem-calc(26px);
+	background: rgba(255, 255, 255, 0.6);
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: rem-calc(7px);
+		transform: translateX(-50%);
+		display: block;
+		width: rem-calc(3px);
+		height: rem-calc(7px);
+		border-radius: rem-calc(3px);
+		background: #b70c19;
+	}
+}
+
+.scroll__text {
+	color: rgba(255, 255, 255, 0.4);
+	font-size: em-calc(14px, 18px);
+}

@@ -1,0 +1,30 @@
+.nav-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include list-reset;
+
+	@include breakpoint(md) {
+		flex-direction: row;
+	}
+}
+
+.nav-list__item {
+	margin-left: rem-calc(30px);
+	@include breakpoint(md-down) {
+		margin: 10px 0;
+	}
+}
+
+.nav-list__item a {
+	text-decoration: none;
+	color: #fff;
+
+	@include breakpoint(md-down) {
+		font-size: em-calc(24px, 16px);
+	}
+}
+
+.nav-list__item .button {
+	margin: 0;
+}

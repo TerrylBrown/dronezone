@@ -1,0 +1,28 @@
+@mixin list-reset() {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+// Breakpoins
+$breakpoints: (
+  sm:  ( min-width:  rem-calc(767px) ),
+  md: ( min-width:  rem-calc(992px) ),
+  lg:  ( min-width: rem-calc(1200px) ),
+  xlg: ( min-width: rem-calc(1450px) ),
+  sm-down: ( max-width: rem-calc(767px) ),
+  md-down: ( max-width: rem-calc(992px) )
+) !default;
+
+// Breakpoins
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
