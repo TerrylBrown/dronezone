@@ -4,7 +4,11 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	padding-top: rem-calc(30px);
+	padding-top: rem-calc(15px);
+
+	@include breakpoint(sm) {
+		padding-top: rem-calc(30px);
+	}
 }
 
 .primary-header__row {

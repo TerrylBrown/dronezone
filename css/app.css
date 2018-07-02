@@ -481,7 +481,10 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 1.875rem; }
+  padding-top: 0.9375rem; }
+  @media (min-width: 47.9375rem) {
+    .primary-header {
+      padding-top: 1.875rem; } }
 
 .primary-header__row {
   display: flex;
@@ -501,6 +504,7 @@ h2 {
 
 .hero__content {
   position: absolute;
+  margin-top: 1.875rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
